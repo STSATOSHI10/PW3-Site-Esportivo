@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Faker from './imgs/esgrimista do ligui.jpeg';
+import KongManWai from './imgs/olho fechado ta no meta.jpeg';
+import Gergely from './imgs/esgrimistado.jpg';
+
 
 function App() {
   return (
@@ -14,13 +18,15 @@ function App() {
             <li><a className="navigationLinks" href="">Campeonatos</a></li>
           </ul>
         </div>
+        <div className="introSection">
+          <div>
+            <h3>O que é Esgrima?</h3>
+            <a>Ver mais</a>
+          </div>
+        </div>
       </header>
 
       <main className='main'>
-        <div className="introSection">
-          <h3>O que é Esgrima?</h3>
-          <a>Ver mais</a>
-        </div>
 
         <section id="news" className="news">
 
@@ -63,20 +69,26 @@ function App() {
           
           <div className="athletesGrid">
             <div className="athletesInfo">
-              <img/>
-              <h3></h3>
+              <div className="athletesInfoHeader">
+                <img src={Faker}/>
+                <h3>Jim "Faker" Wong Hyeong</h3>
+              </div>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam sit obcaecati voluptatem sed, voluptatum eius illum, pariatur porro dolorem fuga quasi quibusdam iure repellendus eum ratione, omnis ea id alias.</p>
             </div>
 
             <div className="athletesInfo">
-              <img/>
-              <h3></h3>
+              <div className="athletesInfoHeader">
+                <img src={KongManWai}/>
+                <h3>Kong Man Wai</h3>
+              </div>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus facere voluptatum distinctio vero perspiciatis tempore quis perferendis ab voluptates, corporis iste temporibus minus atque necessitatibus quasi culpa, dolores dolore quae.</p>
             </div>
 
             <div className="athletesInfo">
-              <img/>
-              <h3></h3>
+              <div className="athletesInfoHeader">
+                <img src={Gergely}/>
+                <h3>Gergely Skiloski</h3>
+              </div>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus facere voluptatum distinctio vero perspiciatis tempore quis perferendis ab voluptates, corporis iste temporibus minus atque necessitatibus quasi culpa, dolores dolore quae.</p>
             </div>
 
